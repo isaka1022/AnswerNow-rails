@@ -10,7 +10,7 @@
       <% end %>
       <div class='navbar-collapse collapse navbar-responsive-collapse navbar-right'>
         <ul class='nav navbar-nav'>
-          <li><%= link_to 'HOME', root_path %></li>
+          <li><%= link_to 'トップ', questions_path %></li>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
           <li><%= link_to 'マイページ', user_path(current_user.id)%></li>
         </ul>
