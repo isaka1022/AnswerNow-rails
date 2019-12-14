@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   }
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'top#index'
-  resources :questions, only: [:index, :show, :create, :destroy]
-  resources :answers, only: [:index, :show, :create, :destroy]
+  resources :questions, only: [:index, :show, :new, :create, :destroy]
+  resources :answers, only: [:index, :show, :new, :create, :destroy]
 end
