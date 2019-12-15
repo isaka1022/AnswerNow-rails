@@ -25,5 +25,4 @@ test:
   database: AnswerNow-rails_test
 
 production:
-  <<: *default
-  database: AnswerNow-rails_development
+  url: <%= ENV['DATABASE_URL'] %>
