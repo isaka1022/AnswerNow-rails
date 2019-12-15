@@ -13,3 +13,172 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   background: #f9f9f9;
+ }
+ 
+ ul {
+   list-style: none;
+ }
+ 
+ a {
+  color: #333;
+  cursor: auto;
+   text-decoration: none;
+ }
+ a:visited {
+   color: #333;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form input:not([type]), .form input[type=date], .form input[type=datetime-local], .form input[type=email], .form input[type=file], .form input[type=number], .form input[type=password], .form input[type=search], .form input[type=text], .form input[type=time], .form input[type=url], .form textarea {
+  width: 100%;
+  -webkit-appearance: none;
+  tap-highlight-color: transparent;
+  -webkit-box-shadow: 0 0 0 0 transparent inset;
+  -webkit-transition: color .1s ease,border-color .1s ease;
+  margin: 0;
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: .28571429rem;
+  outline: none;
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 0 0 transparent;
+  box-shadow: inset 0 0 0 0 transparent;
+  color: rgba(0,0,0,.87);
+  font-size: 1em;
+  transition: color .1s ease,border-color .1s ease;
+}
+
+
+
+ /* ヘッダー */
+ .menu {
+   height: 70px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+ }
+ .menu li{
+  border: solid 1px #333;
+  width: fit-content;
+  padding: 0 10px;
+ }
+ .menu li a{
+   display: block;
+   padding: auto;
+   line-height: 70px;
+   text-decoration: none;
+   text-align: center;
+   height: 100%;
+   width: 100%;
+  }
+
+
+/* トップページ */
+#top_menu {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top_links {
+  height: 200px;
+  width: 50%;
+}
+.top-btn {
+  width: 25%;
+  margin: 20px 0;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+.top-btn:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+/* 入力フォームコンポーネント */
+.single-page {
+  margin: 20px;
+  padding: 25px;
+  background: #fff;
+}
+.single-page h1 {
+    padding-bottom: 30px;
+    color: #000;
+}
+.form {
+  font-size: 1rem;
+  position: relative;
+  max-width: 100%;
+}
+.form .btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  min-height: 1em;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em;
+  border: none;
+  border-radius: .28571429rem;
+  outline: none;
+  background: #e0e1e2 none;
+  color: rgba(0,0,0,.6);
+  font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  vertical-align: baseline;
+  cursor: pointer;
+  transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+  transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+  transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+  will-change: "";
+  user-select: none;
+  background-color: #21ba45;
+  background-image: none;
+  color: #fff;
+  text-shadow: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+  box-shadow: inset 0 0 0 0 rgba(34,36,38,.15) inset;
+}
+
+
+/* タイムライン */
+.list-wrapper {
+  
+}
+.list-item {
+  margin-bottom: 1rem;
+  padding: 0 16px 8px;
+  background: white;
+}
+.list-item a{
+  display: block;
+}

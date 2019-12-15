@@ -1,4 +1,8 @@
-<ul>
-  <li><%= link_to '新規登録', new_user_registration_path %></li>
-  <li><%= link_to 'ログイン', new_user_session_path %></li>
-</ul>
+<div id="top_menu">
+  <h1>AnswerNow!</h1>
+  <p>AnswerNow!は金沢大学生限定の質問投稿サービスです</p>
+  <div class="top_links">
+    <%= link_to '新規登録', new_user_registration_path, {class: "top-btn"} %></button>
+    <%= link_to 'ログイン', new_user_session_path, {class: "top-btn"} %>
+  </div>
+</div>
