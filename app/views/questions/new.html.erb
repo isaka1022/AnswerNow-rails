@@ -2,6 +2,6 @@
   <h1>質問を入力</h1>
   <%= form_for Question.new, html: {class: "form" } do |f| %>
     <%= f.text_area :content %>
-    <%= f.submit :回答する, class: "btn"%>
+    <%= f.submit :質問する, class: "btn"%>
   <% end %>
 </div>

@@ -3,11 +3,11 @@
     <div class='container'>
       <div class='navbar-collapse collapse navbar-responsive-collapse navbar-right'>
         <ul class='menu'>
-          <li><%= link_to 'トップ', questions_path %></li>
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-          <li><%= link_to 'マイページ', user_path(current_user.id)%></li>
-          <li><%= link_to '質問を投稿する！', new_question_path %></li>
+          <li><%= link_to 'ホーム', questions_path %></li>
+          <li><%= link_to '質問する', new_question_path %></li>
           <li><%= link_to '検索', search_questions_path%></li>
+          <li><%= link_to 'マイページ', user_path(current_user.id)%></li>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
         </ul>
       </div>
     </div>

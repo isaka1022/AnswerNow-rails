@@ -3,7 +3,8 @@
 <div class="list-wrapper">
   <% @questions.each do |question| %>
     <div class="list-item">
-      <%=link_to "#{question.content}", question_path(question.id) %>
+      <p><%=link_to "#{question.content}", question_path(question.id) %><p></br>
+      <div class="user-info"><%= image_tag question.user.image.url, :size=>'50x50' %><%=link_to "#{question.user.nickname}さん(#{question.user.faculty}学域#{question.user.subject}学類)より", user_path(question.user_id) %></div>
     </div>
   <% end %>
 </div>
