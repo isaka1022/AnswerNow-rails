@@ -1,0 +1,17 @@
+<div class="single-page">
+  <h1><%= @user.nickname %>の情報</h1>
+  <%= @user.family_name %>
+  <%= @user.first_name %>
+  <%= @user.family_name_kana %>
+  <%= @user.first_name_kana %>
+  <%= @user.nickname %>
+  <%= @user.sex %>
+  <%= @user.faculty %>
+  <%= @user.subject %>
+  <%= @user.laboratory %>
+  <%= @user.course %>
+  <%= @user.club %>
+  <% if @user.id == current_user.id %>
+    <%= link_to '編集', edit_user_path(current_user.id) %>
+  <% end %>
+</div>

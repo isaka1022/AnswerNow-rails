@@ -1,0 +1,9 @@
+<div>
+  <%= @question.content %>
+  <%= link_to 'この質問に回答する', new_answer_path(@question), {class: "top-btn"} %>
+    <% @answers.each do |answer| %>
+    <div class="list-item">
+      answer.content
+    </div>
+    <% end %>
+</div>

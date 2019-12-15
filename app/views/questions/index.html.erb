@@ -1,0 +1,9 @@
+
+
+<div class="list-wrapper">
+  <% @questions.each do |question| %>
+    <div class="list-item">
+      <%=link_to "#{question.content}", question_path(question.id) %>
+    </div>
+  <% end %>
+</div>
