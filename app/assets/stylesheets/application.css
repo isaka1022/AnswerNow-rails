@@ -131,6 +131,8 @@
   max-width: 100%;
 }
 .form .btn {
+  width: 100%;
+  margin: 1rem 0 !important;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -160,7 +162,7 @@
   transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
   will-change: "";
   user-select: none;
-  background-color: #21ba45;
+  background-color: #67c5ff;
   background-image: none;
   color: #fff;
   text-shadow: none;
