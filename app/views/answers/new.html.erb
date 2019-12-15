@@ -1,8 +1,12 @@
-<p><%= @question.content %></p>
+<div class="single-page">
+  <h1>回答を入力</h1>
+  <p><%= @question.content %></p>
+  <%= form_for Answer.new, html: {class: "form"} do |f| %>
+    <%= f.text_area :content %>
+    <%= f.hidden_field :question_id, :value => @question.id  %>
+    <%= f.submit :回答する, class: "btn"%>
+  <% end %>
+</div>
 
-<%= form_for Answer.new do |f| %>
-  <%= f.label :回答を入力 %>
-  <%= f.text_area :content %>
-  <%= f.hidden_field :question_id, :value => @question.id  %>
-  <%= f.submit :回答する%>
-<% end %>
+
+
