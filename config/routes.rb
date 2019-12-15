@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'users/show'
+  get 'users/update'
+  get 'users/edit'
+  get 'users/show'
   devise_for :users, controllers: {
     :registrations => 'users/registrations',
     :sessions => 'users/sessions'
