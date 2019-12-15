@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
 
   def index
-    @questions = Question.all
+    @questions = Question.all.order(id: "DESC")
   end
 
   def show
@@ -18,6 +18,15 @@ class QuestionsController < ApplicationController
     @question.user_id = current_user.id
     @question.save
     redirect_to '/questions'
+  end
+
+  def user_question
+    @user_id = params[:format]
+    @questions = Question.where(user_id: params[:id])
+  end
+
+  def search
+    @question = Question.search(params[:search])
   end
 
   def destory

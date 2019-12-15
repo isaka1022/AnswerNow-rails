@@ -13,6 +13,8 @@
           <li><%= link_to 'トップ', questions_path %></li>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
           <li><%= link_to 'マイページ', user_path(current_user.id)%></li>
+          <li><%= link_to '質問を投稿する！', new_question_path %></li>
+          <li><%= link_to '検索', search_questions_path%></li>
         </ul>
       </div>
     </div>
