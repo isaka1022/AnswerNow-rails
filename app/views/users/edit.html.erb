@@ -1,7 +1,8 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
-
 <%= form_for(@user) do |f| %>
+  <div class="form-group">
+  <%= f.file_field :image %>
+  </div>
+  
   <div class="form-group">
   <%= f.label :family_name, '性' %>
   <%= f.text_field :family_name, class: 'form-control' %>
@@ -49,7 +50,7 @@
 
   <div class="form-group">
   <%= f.label :nick_name, '研究室・ゼミ' %>
-  <%= f.text_field :laboratory, class: 'form-control' %>
+  <%= f.text_field :labratory, class: 'form-control' %>
   </div>
 
   <div class="form-group">

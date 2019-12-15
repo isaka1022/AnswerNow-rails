@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :answers
   has_many :questions
+  mount_uploader :image, ImageUploader
 end
