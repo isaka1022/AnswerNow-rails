@@ -62,3 +62,6 @@ gem 'devise'
 gem 'mysql2'
 gem 'activeadmin'
 gem 'carrierwave'
+
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'

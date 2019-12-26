@@ -1,7 +1,6 @@
 <% if user_signed_in? %>
   <div class='navbar'>
-    <div class='container'>
-      <div class='navbar-collapse collapse navbar-responsive-collapse navbar-right'>
+      <div>
         <ul class='menu'>
           <li><%= link_to 'ホーム', questions_path %></li>
           <li><%= link_to '質問する', new_question_path %></li>
@@ -11,5 +10,4 @@
         </ul>
       </div>
     </div>
-  </div>
 <% end %>
