@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   root 'top#index'
   resources :users, only: [:show, :edit, :update]
   resources :questions, only: [:index, :show, :new, :create, :destroy]
-  resources :questions do
-    get :search, on: :collection
-  end
   resources :answers, only: [:index, :show, :new, :create, :destroy]
+  get '/search' => 'questions#search'
 end

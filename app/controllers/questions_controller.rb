@@ -26,7 +26,7 @@ class QuestionsController < ApplicationController
   end
 
   def search
-    @question = Question.search(params[:search])
+    @questions = Question.search(params[:search])
   end
 
   def destory
