@@ -1,7 +1,7 @@
 <h1>質問を検索しましょう</h1>
-<%= form_with url: search_path, method: :get, local: true do |f| %>
+<%= form_with url: search_path, method: :get, html: {class: "form" }, local: true do |f| %>
   <%= f.text_field :search %>
-  <%= f.submit :search %>
+  <%= f.submit :search, class: "btn" %>
 <% end %>
 <div class="list-wrapper">
   <% @questions.each do |question| %>

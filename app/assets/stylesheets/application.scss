@@ -15,8 +15,10 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
+$pink : #FBD5D1;
+
  body {
-   background: #f9f9f9;
+   background: $pink;
    margin:0;
  }
  
@@ -96,7 +98,7 @@
   transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
   will-change: "";
   user-select: none;
-  background-color: #67c5ff;
+  background-color: #95DED9;
   background-image: none;
   color: #fff;
   text-shadow: none;
@@ -107,16 +109,28 @@
 
 
  /* ヘッダー */
- .navbar {
-   background-color: pink;
+ .navbar-1 {
+   border-bottom:0.2868965517vw solid #D3D3D3;
+   border-top:0.2868965517vw solid #D3D3D3;
+   display:flex;
+   justify-content:space-between;
+   background-color: #fff;
+ }
+ .top-image{
+   width:300px;
+   height:100%;
+ }
+ .top-image img {
+   width: 100%;
+   height:66px;
  }
  .menu {
-   height: 70px;
+   height: 66px;
    width: 100%;
    margin: 0;
    padding: 0;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
  }
  .menu li{
   width: fit-content;
@@ -131,7 +145,11 @@
    height: 100%;
    width: 100%;
   }
-
+  
+.menu li a:hover{
+  color:$pink;
+  transition:0.5s;
+}
 
 /* トップページ */
 #top_menu {
@@ -152,13 +170,13 @@
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #67c5ff;
-  border: solid 2px #67c5ff;
+  color: #95DED9;
+  border: solid 2px #95DED9;
   border-radius: 3px;
   transition: .4s;
 }
 .top-btn:hover {
-  background: #67c5ff;
+  background: #95DED9;
   color: white;
 }
 
@@ -209,7 +227,7 @@
   transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
   will-change: "";
   user-select: none;
-  background-color: #67c5ff;
+  background-color: #95DED9;
   background-image: none;
   color: #fff;
   text-shadow: none;
@@ -260,3 +278,4 @@
   width: 100%;
   margin:1rem;
 }
+
