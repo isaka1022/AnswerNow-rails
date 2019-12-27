@@ -5,7 +5,9 @@
     <div class="list-item">
     <p><%=link_to "#{answer.content}", question_path(answer.id) %><p></br>
     <%=time_ago_in_words(answer.created_at)%>前の投稿です</br>
+    <%= render :partial => 'common/like', locals: { answer: answer } %></br>
     <div class="user-info"><%= image_tag answer.user.image.url, :size=>'50x50' %><%=link_to "#{answer.user.nickname}さん(#{answer.user.faculty}学域#{answer.user.subject}学類)より", user_path(answer.user_id) %></div>
     </div>
+    
     <% end %>
 </div>
