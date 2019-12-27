@@ -96,7 +96,7 @@
   transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
   will-change: "";
   user-select: none;
-  background-color: #67c5ff;
+  background-color: #95DED9;
   background-image: none;
   color: #fff;
   text-shadow: none;
@@ -107,8 +107,8 @@
 
 
  /* ヘッダー */
- .navbar {
-   background-color: pink;
+ .navbar-1 {
+   background-color: #FBD5D1;
  }
  .menu {
    height: 70px;
@@ -116,7 +116,7 @@
    margin: 0;
    padding: 0;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
  }
  .menu li{
   width: fit-content;
@@ -152,13 +152,13 @@
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #67c5ff;
-  border: solid 2px #67c5ff;
+  color: #95DED9;
+  border: solid 2px #95DED9;
   border-radius: 3px;
   transition: .4s;
 }
 .top-btn:hover {
-  background: #67c5ff;
+  background: #95DED9;
   color: white;
 }
 
@@ -209,7 +209,7 @@
   transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
   will-change: "";
   user-select: none;
-  background-color: #67c5ff;
+  background-color: #95DED9;
   background-image: none;
   color: #fff;
   text-shadow: none;
