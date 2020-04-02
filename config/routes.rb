@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   resources :questions, only: [:index, :show, :new, :create, :destroy]
   resources :answers, only: [:index, :show, :new, :create, :destroy]
+  resources :answers do
+    resources :likes, only:[:create, :destroy]
+  end
   get '/search' => 'questions#search'
 end

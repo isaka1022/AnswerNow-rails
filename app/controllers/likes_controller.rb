@@ -1,23 +1,26 @@
 class LikesController < ApplicationController
-  before_action : set_answer, only: [;index, :toggle]
+  before_action :set_valiables, only: [:index, :create, :destroy, :toggle]
+  protect_from_forgery
   def index
     @likes = @answer.likes
   end
 
-  def mine
-    @likes = current_user.likes.all
+  def create
+    @like = Like.create(user_id: current_user.id, answer_id: params[:answer_id])
+    @answer = Answer.find_by(params[:answer_id])
+    render 'create.js.erb'
   end
 
-  def toggle
-    rause Firbudden if @answer.user = current_user
-
-    @like = @answer.likes.where(user: current_user).first || @answer.likes.new(user: current_user)
-    result = @like.tiggle_existance
+  def destroy
+    like = Like.create(user_id: current_user.id, answer_id: params[:answer_id])
+    like.destroy
+    @likes = Like.where(answer_id: params[:answer_id])
+    @answers = Answer.all
   end
 
   private
 
-  def set_answer
+  def set_valiables
     @answer = Answer.find(params[:answer_id])
   end
 end

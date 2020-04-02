@@ -1,5 +1,5 @@
 class Like < ApplicationRecord
-  belongs_to :answer
+  belongs_to :answer, counter_cache: :likes_count
   belongs_to :user
 
   def toggle_existance

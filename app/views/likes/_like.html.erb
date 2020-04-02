@@ -1,0 +1,7 @@
+<div class="like-link">
+<%= button_to answer_likes_path(answer_id: answer.id), id: "like-button", remote: true do %>
+  <span>
+    <%= answer.likes_count %>
+  </span>
+<% end %>
+</div>

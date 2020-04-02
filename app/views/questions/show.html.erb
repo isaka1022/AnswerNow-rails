@@ -2,12 +2,11 @@
   <%= @question.content %>
   <%= link_to 'この質問に回答する', new_answer_path(@question), {class: "top-btn"} %>
     <% @answers.each do |answer| %>
-    <div class="list-item">
-    <p><%=link_to "#{answer.content}", question_path(answer.id) %><p></br>
-    <%=time_ago_in_words(answer.created_at)%>前の投稿です</br>
-    <%= render :partial => 'common/like', locals: { answer: answer } %></br>
-    <div class="user-info"><%= image_tag answer.user.image.url, :size=>'50x50' %><%=link_to "#{answer.user.nickname}さん(#{answer.user.faculty}学域#{answer.user.subject}学類)より", user_path(answer.user_id) %></div>
-    </div>
-    
+      <div class="list-item">
+      <p><%= "#{answer.content}" %><p></br>
+      <%=time_ago_in_words(answer.created_at)%>前の投稿です
+      <%= render partial: 'likes/like', locals: {answer: answer} %>
+      <div class="user-info"><%= image_tag answer.user.image.url, :size=>'50x50' %><%=link_to "#{answer.user.nickname}さん(#{answer.user.faculty}学域#{answer.user.subject}学類)より", user_path(answer.user_id) %></div>
+      </div>
     <% end %>
 </div>
